@@ -3,20 +3,14 @@ title: about
 layout: page
 ---
 
-a
+github
 
-> Minimalist | Appleist | Unixer | Coder
+> [https://github.com/seeyoui](https://github.com/seeyoui)
 
-who involved in 
+mail
 
-> [github](https://github.com/waynezhang)
+> seeyouiken@163.com
 
-mail 
+qq
 
-> echo srvpqxfbyqfvpdtkbjwt | tr yxwvtsrqpkjfdb zuonmlihgeca@.
-
-or follow 
-
-> [@o_lll](https://twitter.com/#!/o_lll)
-
-to reach me
+> 2624030701

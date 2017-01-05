@@ -9,6 +9,9 @@ atom-baseurl: "http://www.seeyoui.com"
 disqus: "seeyoui"
 
 navigations:
+  - title: Home
+    class: fa fa-home
+    href: /index.html
   - title: Archive
     class: fa fa-list-ul
     href: /archive.html
