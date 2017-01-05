@@ -1,29 +1,25 @@
+---
+---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>See you i</title>
- <link href="http://www.seeyoui.com/atom.xml" rel="self"/>
- <link href="http://www.seeyoui.com"/>
- <updated>2017-01-05T11:26:39+08:00</updated>
- <id>http://www.seeyoui.com/</id>
+ <title>{{ site.name }}</title>
+ <link href="{{ site.atom-baseurl }}/atom.xml" rel="self"/>
+ <link href="{{ site.atom-baseurl }}"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>{{ site.atom-baseurl }}/</id>
  <author>
-   <name>ken</name>
+   <name>{{ site.author }}</name>
  </author>
 
- 
+ {% for post in site.posts limit:10 %}
  <entry>
-   <title>love</title>
-   <link href="http://www.seeyoui.com/2016/11/20/Love.html"/>
-   <updated>2016-11-20T00:00:00+08:00</updated>
-   <id>urn:uuid:de8d598d-6f35-4c7b-ab23-1951062dadfc</id>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;/media/files/2016/11/20/love.jpg&quot; alt=&quot;Shadow&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;2016年结束单身，最爱「1120」&lt;/li&gt;
-&lt;/ul&gt;
-
-</content>
+   <title>{{ post.title | xml_escape }}</title>
+   <link href="{{ site.atom-baseurl }}{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   {% if post.guid %}<id>{{ post.guid }}</id>{% else %}<id>{{ site.atom-baseurl }}{{ post.id }}</id>{% endif %}
+   <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
- 
+ {% endfor %}
  
 </feed>
