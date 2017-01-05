@@ -1,12 +1,12 @@
 markdown: rdiscount
 highlighter: pygments
 permalink: /:year/:month/:day/:title.html
-name: "rusty shutter"
+name: "See you i"
 markdown: rdiscount
 
-author: "wayne"
-atom-baseurl: "http://lhzhang.com"
-disqus: "gopherwood"
+author: "ken"
+atom-baseurl: "http://www.seeyoui.com"
+disqus: "seeyoui"
 
 navigations:
   - title: Archive
