@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>See you i</title>
+ <link href="http://www.seeyoui.com/atom.xml" rel="self"/>
+ <link href="http://www.seeyoui.com"/>
+ <updated>2017-01-05T15:03:50+08:00</updated>
+ <id>http://www.seeyoui.com/</id>
+ <author>
+   <name>ken</name>
+ </author>
+
+ 
+ <entry>
+   <title>love</title>
+   <link href="http://www.seeyoui.com/2016/11/20/Love.html"/>
+   <updated>2016-11-20T00:00:00+08:00</updated>
+   <id>urn:uuid:de8d598d-6f35-4c7b-ab23-1951062dadfc</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/media/files/2016/11/20/love.jpg&quot; alt=&quot;Shadow&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2016年结束单身，最爱「1120」&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
+ 
+ 
+</feed>

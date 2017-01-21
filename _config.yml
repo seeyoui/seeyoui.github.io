@@ -1,0 +1,24 @@
+markdown: rdiscount
+highlighter: pygments
+permalink: /:year/:month/:day/:title.html
+name: "See you i"
+markdown: rdiscount
+
+author: "ken"
+atom-baseurl: "http://www.seeyoui.com"
+disqus: "seeyoui"
+
+navigations:
+  - title: Home
+    class: fa fa-home
+    href: /index.html
+  - title: Archive
+    class: fa fa-list-ul
+    href: /archive.html
+  - title: Tags
+    class: fa fa-tags
+    href: /tags.html
+  - title: About
+    class: fa fa-user
+    href: /about.html
+
