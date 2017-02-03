@@ -3,6 +3,6 @@ title: 404
 layout: page
 ---
 
-Nothing found :(
+页面君走丢了 :(
 
-But you still can have a [look around](/index.html)
+你可以看看这个 [戳这里](/index.html)
