@@ -4,7 +4,9 @@ layout: default
 
 <div>
   <ul class="listing">
-  {% for post in site.posts reversed limit:1 offset:1 %}
+  {% assign title_name = 'love' %}
+  {% for post in site.posts reversed %}
+  {% if post.title == title_name %}
   <article class="content">
     <section class="title">
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
@@ -25,6 +27,8 @@ layout: default
     {{ post.content }}
     </section>
     </article>
+    {% break %}
+  {% endif %}
   {% endfor %}
   </ul>
   <div class="divider"></div>

@@ -10,7 +10,6 @@
  * |\.|._)._)
  * --------------------------------- */
 @import url(/media/fonts/telex-regular.css);
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:300);
 @import url(//code.cdn.mozilla.net/fonts/fira.css);
 * {
   margin: 0;
@@ -155,7 +154,11 @@ article {
     display: block;
     overflow: auto;
     margin-top: -.5em;
-    font-size: .9em; }
+    margin-bottom: .5em;
+    font-size: .9em;
+    border-bottom-color: #dd1144;
+    border-bottom-style: dashed;
+    border-width: 1px; }
     article .meta .tags header #header h1 a, header #header h1 article .meta .tags a, article .meta .tags a {
       color: #999999;
       padding: .25em; }
