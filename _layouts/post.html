@@ -59,7 +59,7 @@ layout: default
     </span>
   </div>
 
-  <div class="ds-share flat" data-thread-key="{{ page.guid }}" data-title="{{ page.title }}" data-images="" data-content="{{ page.excerpt }}" data-url="www.seeyoui.com/{{ page.url }}">
+  <div class="ds-share flat" data-thread-key="{{ page.guid }}" data-title="{{ page.title }}" data-images="" data-content="{{ page.excerpt }}" data-url="www.seeyoui.com{{ page.url }}">
     <div class="ds-share-inline">
       <ul  class="ds-share-icons-16">
         
@@ -77,7 +77,7 @@ layout: default
   <!-- BEGIN comment -->
   <section class="comment">
   <!-- 多说评论框 start -->
-  <div class="ds-thread" data-thread-key="{{ page.guid }}" data-title="{{ page.title }}" data-url="www.seeyoui.com/{{ page.url }}"></div>
+  <div class="ds-thread" data-thread-key="{{ page.guid }}" data-title="{{ page.title }}" data-url="www.seeyoui.com{{ page.url }}"></div>
   <!-- 多说评论框 end -->
   <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
   <script type="text/javascript">
