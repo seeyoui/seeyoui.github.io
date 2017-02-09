@@ -23,54 +23,43 @@ tags:
 > oracle安装包下载地址：  
 百度网盘：[http://pan.baidu.com/s/1minuD9u](http://pan.baidu.com/s/1minuD9u)  
 官网地址：[http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html)  
+打开链接可以看到  
+![Shadow](/media/files/2017/02/06/ks_000.png)  
+在如图位置点选*Accept License Agreement*  
+![Shadow](/media/files/2017/02/06/ks_002.png)  
+选择对应操作系统下的Oracle程序包下载  
+![Shadow](/media/files/2017/02/06/ks_003.png)  
+下载完成，有的是一个压缩包有的是两个压缩包  
+![Shadow](/media/files/2017/02/06/ks_004.png)  
 
 ### 安装步骤
 
-> #### 解压下载的两个压缩包中的文件到一个文件夹中  
-解压后文档结构如图所示  
-![Shadow](/media/files/2017/02/06/000.jpg)  
-#### 安装之前请关闭Windows防火墙并断开网络  
-xp系统下直接双击运行，win7上安装，如图:在setup文件上点击右键，选择以“管理员身份运行”。  
-![Shadow](/media/files/2017/02/06/001.jpg)  
-#### 运行启动安装程序  
-安装程序会进行操作系统的兼容性检查。如果检查无法通过，安装程序会直接退出，给出错误提示，部分Win7系统可能会出现这种情况。如图所示  
-![Shadow](/media/files/2017/02/06/002.jpg)  
-#### 当检查通过后打开安装向导对话框  
-如图：根据需要设置安装路径，全局数据库名默认使用**orcl**，按图中提示设置相应信息。点击【下一步】  
-![Shadow](/media/files/2017/02/06/003.jpg)  
-#### 安装程序进行准备  
-如图：  
-![Shadow](/media/files/2017/02/06/004.jpg)  
-#### 准备完成后，会进行一些先决条件的安装检查  
-如图：  
-![Shadow](/media/files/2017/02/06/005.jpg)  
-#### 查看检查结果  
-状态为成功即可点击【下一步】进行安装,如图：  
-![Shadow](/media/files/2017/02/06/006.jpg)  
-#### 弹出警告窗口  
-选择否取消安装，是继续安装。这里选择【是】继续安装，如图：  
-![Shadow](/media/files/2017/02/06/007.jpg)  
-#### 等进度条走完后进入下一安装界面  
-如图：  
-![Shadow](/media/files/2017/02/06/008.jpg)  
-#### 点击【安装】  
-如图：  
-![Shadow](/media/files/2017/02/06/009.jpg)  
-#### 安装过程中会弹出口令管理对话框，此时不要着急点击完成  
-如图：  
-![Shadow](/media/files/2017/02/06/010.jpg)  
-#### 点击【口令管理】，打开口令管理对话框  
-设置sys，和system用户密码， 可以设置为一样，如图：  
-![Shadow](/media/files/2017/02/06/011.jpg)  
-#### 找到sh,scott,将锁定账号的勾去掉，并设置密码  
-如图：  
-![Shadow](/media/files/2017/02/06/012.jpg)  
-#### 一路确定返回，安装向导继续运行  
-如图：  
-![Shadow](/media/files/2017/02/06/013.jpg)  
-#### 点击退出，选择是，退出安装向导  
-如图：  
-![Shadow](/media/files/2017/02/06/014.jpg)  
-#### 安装完成，服务启动与关闭  
-如图：  
-![Shadow](/media/files/2017/02/06/015.jpg)  
+> #### 解压下载的压缩包中的文件到一个文件夹中  
+![Shadow](/media/files/2017/02/06/ks_005.png)  
+#### 解压后文档结构如图所示  
+![Shadow](/media/files/2017/02/06/ks_006.png)  
+#### 双击steup.exe，进入安装界面  
+![Shadow](/media/files/2017/02/06/ks_007.png)  
+选择安装Oracle主目录位置，输入数据库口令，点击下一步  
+![Shadow](/media/files/2017/02/06/ks_008.png)  
+点击下一步，可以看到  
+![Shadow](/media/files/2017/02/06/ks_009.png)  
+选择是  
+![Shadow](/media/files/2017/02/06/ks_010.png)  
+点击安装，耐心等待  
+![Shadow](/media/files/2017/02/06/ks_011.png)  
+![Shadow](/media/files/2017/02/06/ks_012.png)  
+![Shadow](/media/files/2017/02/06/ks_013.png)  
+最终看到  
+![Shadow](/media/files/2017/02/06/ks_014.png)  
+![Shadow](/media/files/2017/02/06/ks_015.png)  
+
+### 服务启动与关闭  
+> #### 右键点击我的电脑 -> 管理    
+![Shadow](/media/files/2017/02/06/ks_016.png)  
+在右侧找到这三个服务  
+第一个服务如果不使用SQL PLUS可以不启动  
+第二个服务必须启动  
+第三个服务必须启动，**OracleServiceXXXX**，XXXX对应的是安装界面上的**全局数据库名**  
+![Shadow](/media/files/2017/02/06/ks_017.png)  
+右键点击即可选择启动或者关闭服务了  
