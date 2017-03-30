@@ -110,7 +110,7 @@ tags:
 
 2.启动并访问项目  
 > 运行项目根目录下**bin/clean.bat**  
-运行项目根目录下**bin/run-jetty.bat**  
+运行项目根目录下**bin/run-tomcat7.bat**  
 ![项目启动过程](/media/files/2017/02/04/jettyrun.png)  
 浏览器地址栏访问：**http://localhost:8080/kensite/**  
 ![登陆界面](/media/files/2017/02/04/login.png)  
